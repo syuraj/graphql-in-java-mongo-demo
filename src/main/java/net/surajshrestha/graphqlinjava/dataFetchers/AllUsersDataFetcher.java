@@ -1,4 +1,4 @@
-package net.surajshrestha.dataFetchers;
+package net.surajshrestha.graphqlinjava.dataFetchers;
 
 import graphql.schema.DataFetcher;
 import graphql.schema.DataFetchingEnvironment;

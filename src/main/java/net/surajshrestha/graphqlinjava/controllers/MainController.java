@@ -1,4 +1,4 @@
-package net.surajshrestha.controllers;
+package net.surajshrestha.graphqlinjava.controllers;
 
 import graphql.ExecutionResult;
 import graphql.GraphQL;

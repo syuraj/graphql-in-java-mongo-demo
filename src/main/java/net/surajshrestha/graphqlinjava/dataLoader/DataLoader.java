@@ -1,4 +1,4 @@
-package net.surajshrestha.dataLoader;
+package net.surajshrestha.graphqlinjava.dataLoader;
 
 import net.surajshrestha.graphqlinjava.models.User;
 import net.surajshrestha.graphqlinjava.repositories.ArticleRepository;
