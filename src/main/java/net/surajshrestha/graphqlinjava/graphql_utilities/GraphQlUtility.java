@@ -1,4 +1,4 @@
-package net.surajshrestha.graphql_utilities;
+package net.surajshrestha.graphqlinjava.graphql_utilities;
 
 
 import graphql.GraphQL;
@@ -7,9 +7,9 @@ import graphql.schema.idl.RuntimeWiring;
 import graphql.schema.idl.SchemaGenerator;
 import graphql.schema.idl.SchemaParser;
 import graphql.schema.idl.TypeDefinitionRegistry;
-import net.surajshrestha.dataFetchers.AllUsersDataFetcher;
-import net.surajshrestha.dataFetchers.ArticlesDataFetcher;
-import net.surajshrestha.dataFetchers.UserDataFetcher;
+import net.surajshrestha.graphqlinjava.dataFetchers.AllUsersDataFetcher;
+import net.surajshrestha.graphqlinjava.dataFetchers.ArticlesDataFetcher;
+import net.surajshrestha.graphqlinjava.dataFetchers.UserDataFetcher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;

@@ -2,7 +2,7 @@ package net.surajshrestha.graphqlinjava.controllers;
 
 import graphql.ExecutionResult;
 import graphql.GraphQL;
-import net.surajshrestha.graphql_utilities.GraphQlUtility;
+import net.surajshrestha.graphqlinjava.graphql_utilities.GraphQlUtility;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

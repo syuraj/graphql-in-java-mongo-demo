@@ -1,6 +1,5 @@
 package net.surajshrestha.graphqlinjava.dataFetchers;
 
-
 import graphql.schema.DataFetcher;
 import graphql.schema.DataFetchingEnvironment;
 import net.surajshrestha.graphqlinjava.models.Article;
@@ -13,12 +12,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class ArticlesDataFetcher implements DataFetcher<List<Article>>{
+public class ArticlesDataFetcher implements DataFetcher<List<Article>> {
 
     private final ArticleService articleService;
 
     @Autowired
-    ArticlesDataFetcher(ArticleService articleService){
+    ArticlesDataFetcher(ArticleService articleService) {
         this.articleService = articleService;
     }
 
@@ -26,7 +25,7 @@ public class ArticlesDataFetcher implements DataFetcher<List<Article>>{
     public List<Article> get(DataFetchingEnvironment env) {
         User user = env.getSource();
         List<String> articleIds = new ArrayList<>();
-        if(user!=null){
+        if (user != null) {
             articleIds = user.getArticlesIds();
         }
         List<Article> articles = articleService.findAllUserArticles(articleIds);
