@@ -1,8 +1,0 @@
-server:
-  port: 8000
-spring:
-  data:
-    mongodb:
-      database: admin
-      host: localhost
-      port: 27017
