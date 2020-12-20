@@ -7,8 +7,6 @@
 
    <localRepository>./repository</localRepository>
    <offline>false</offline>
-
-   
    
    <servers></servers>
 

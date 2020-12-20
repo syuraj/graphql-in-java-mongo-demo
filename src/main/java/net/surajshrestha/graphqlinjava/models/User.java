@@ -14,7 +14,6 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-//@Document(collation = "users")
 @Document("users")
 public class User {
     private ObjectId id;
