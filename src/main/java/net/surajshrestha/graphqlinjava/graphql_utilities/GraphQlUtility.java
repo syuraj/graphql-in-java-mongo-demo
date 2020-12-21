@@ -16,8 +16,9 @@ import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
-import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 @Component
 public class GraphQlUtility {
@@ -41,8 +42,8 @@ public class GraphQlUtility {
 
     @PostConstruct
     public GraphQL createGraphQlObject() throws IOException {
-        File schemas = schemaResource.getFile();
-        TypeDefinitionRegistry typeRegistry = new SchemaParser().parse(schemas);
+        InputStream schemaStream = schemaResource.getInputStream();
+        TypeDefinitionRegistry typeRegistry = new SchemaParser().parse(new InputStreamReader(schemaStream));
         RuntimeWiring wiring = buildRunTimeWiring();
         GraphQLSchema schema = new SchemaGenerator().makeExecutableSchema(typeRegistry, wiring);
         return GraphQL.newGraphQL(schema).build();
